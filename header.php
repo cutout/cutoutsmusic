@@ -22,11 +22,6 @@
 <![endif]-->
 
 
-<style>
-
-video{opacity:.2;position:fixed;right:0;bottom:0;min-width:100%;min-height:100%;width:auto;height:auto;z-index:-100;background:url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/polina.jpg) no-repeat;background-size:cover;-webkit-transition:1s opacity;transition:1s opacity}
-
-</style>
 
 <?php wp_head(); ?>
 <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/responsive.css" type="text/css" media="all" />
@@ -38,7 +33,7 @@ video{opacity:.2;position:fixed;right:0;bottom:0;min-width:100%;min-height:100%;
 <body <?php body_class('loading'); ?>>
 
 <video autoplay="" loop="" poster="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/polina.jpg" id="bgvid">
-<source src="<?php bloginfo('template_url'); ?>/vid/polina.mp4" type="video/mp4">
+<source src="http://demosthenes.info/assets/videos/polina.mp4" type="video/mp4">
 </video>
 
 

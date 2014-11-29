@@ -32,7 +32,7 @@ article,aside,figure,figure img,figcaption,hgroup,footer,header,nav,section,vide
 	}
 	
 html {
-	 background: #efefef url(../images/grid.png); 
+	 background: #fff url(../images/squairy_light.png); 
 	 } 
 	
 body {
@@ -861,11 +861,7 @@ input.searchfield[type=text]:focus {
 // Footer
 // =======================================================================
 
-/*
-footer, .push {
-	height:@footer-sticky;
-	}
-*/
+video{opacity:.2;position:fixed;right:0;bottom:0;min-width:100%;min-height:100%;width:auto;height:auto;z-index:-100;background:url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/polina.jpg) no-repeat;background-size:cover;-webkit-transition:1s opacity;transition:1s opacity}
 
 
 #player {
@@ -881,9 +877,10 @@ footer {
 	text-align:center;
 	
 	h1 {
-		font-size:3em;
-		font-weight:100;
-		margin-bottom:7px;
+		font-size:2.2em;
+		font-weight:500;
+		margin-bottom:9px;
+		color:#272727;
 		
 		.quote {
 			color:red;
@@ -929,6 +926,11 @@ footer {
 		font-weight:500;
 		text-rendering:optimizeLegibility;
 		color:@text-color-lt;
+		
+		a, a:visited {
+			color:#111;
+			border-bottom:1px solid #919191;
+			}
 		}	
 	}
 	
