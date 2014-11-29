@@ -31,14 +31,16 @@ article,aside,figure,figure img,figcaption,hgroup,footer,header,nav,section,vide
 	display:block
 	}
 	
-body,html {
-	} 
+html {
+	 background: #efefef url(../images/grid.png); 
+	 } 
 	
 body {
 	color: @text-color; 
 	min-width:@content-width;
 	-ms-text-size-adjust:100%;
-	-webkit-text-size-adjust:100%	
+	-webkit-text-size-adjust:100%;
+	background:transparent;	
 	}
 
 body, input, textarea, select, button {
@@ -109,7 +111,6 @@ img {
 	
 h1, h2, h3, h4, h5 {
 	font-family: @font-display;
-	-webkit-font-smoothing: antialiased;
 	text-rendering: optimizeLegibility;
 	}
 	
@@ -294,6 +295,7 @@ h1, h2, h3, h4, h5 {
 
 
 /*Misc*/
+
 
 	
 .TB_overlayBG {
@@ -747,17 +749,10 @@ input:focus, textarea:focus {
 	}
 
 .pause {
-	width:30px;
-	height:30px;
-	background:#000 url(../images/pause-play.png) no-repeat center center;
 	border:0;
 	position:absolute;
 	right:15px;
 	top:15px;
-	overflow:hidden;
-	whitespace:nowrap;
-	text-indent:100%;
-	border:1px solid #717171;
 	}
 		
 
@@ -866,46 +861,75 @@ input.searchfield[type=text]:focus {
 // Footer
 // =======================================================================
 
+/*
 footer, .push {
 	height:@footer-sticky;
 	}
-		 
+*/
+
+
+#player {
+	.opacity(.85);
+	}
+	
+			 
 footer {
-	margin-top: 30px;
-	color: #a0a0a0;
-	padding: 15px;
 	position:absolute;
-	bottom:0;
 	width:100%;
-	background:rgba(255,255,255,.8);
-	height:290px;
+	bottom:0;
+	padding-bottom:15px;
+	text-align:center;
 	
-	a, a:visited {
-		border:none;
-		}
-
-	a:hover, a:active {
-		color:#FFF;
-		}
-
-	.left, .right {
-		width:50%
-		}
-
-	.right {
-		text-align: right
+	h1 {
+		font-size:3em;
+		font-weight:100;
+		margin-bottom:7px;
+		
+		.quote {
+			color:red;
+			}
 		}
 	
-	#icon-rss {
-		vertical-align: middle;
-		margin-right:5px;
-		}
+	h2 {
+		margin-bottom:32px;
+		font-weight:300;
+		font-size:1.15em;
+		letter-spacing:.03em;
+		color:@text-color-lt;
+		font-family:@font-body;
+		
+		strong {
+			font-weight:500;
+			}
+		
+		a.buy, a.buy:visited {
+			.rounded(4px);
+			padding: 6px 12px;
+			text-transform: uppercase;
+			font-size: .6em;
+			margin-left: 10px;
+			border:2px solid #333;
+			font-family:@font-body;
+			color:#111;
+			font-weight:500;
+			letter-spacing:.06em;
+			}
+		
+		a.buy:hover, a.buy:hover {
+			background:#333;
+			color:#fff;
+			}	
+		}	
 	
-	.widget {
-		width: 23%;
-		float: left;
-		margin: 15px 11px 30px;
-		}			
+	.copyright {
+		font-size:.65em;
+		text-transform:uppercase;
+		letter-spacing:.1em;
+		margin-top:20px;
+		font-weight:500;
+		text-rendering:optimizeLegibility;
+		color:@text-color-lt;
+		}	
 	}
 	
 	

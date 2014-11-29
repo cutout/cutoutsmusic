@@ -102,18 +102,22 @@ video,
 object {
   display: block;
 }
+html {
+  background: #efefef url(../images/grid.png);
+}
 body {
   color: #111111;
   min-width: 1280px;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
+  background: transparent;
 }
 body,
 input,
 textarea,
 select,
 button {
-  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-family: 'omnes-pro', sans-serif;
 }
 a,
 a:visited {
@@ -179,8 +183,7 @@ h2,
 h3,
 h4,
 h5 {
-  font-family: Georgia, 'Times New Roman', serif;
-  -webkit-font-smoothing: antialiased;
+  font-family: 'dapifer', Georgia, 'Times New Roman', serif;
   text-rendering: optimizeLegibility;
 }
 .row {
@@ -521,7 +524,7 @@ article blockquote {
   padding: 0 18px;
   margin: 25px 45px;
   border-left: 3px solid #555555;
-  color: #505050;
+  color: #494949;
 }
 article pre,
 article code {
@@ -530,7 +533,7 @@ article code {
 article code {
   background: #f3f3f3;
   padding: 8px;
-  color: #505050;
+  color: #494949;
   display: block;
 }
 article ul,
@@ -619,10 +622,10 @@ article .wp-caption p.wp-caption-text {
   margin: 5px 0 0;
   padding: 5px 0 10px;
   text-align: center;
-  font-family: Georgia, 'Times New Roman', serif;
+  font-family: 'dapifer', Georgia, 'Times New Roman', serif;
   font-style: italic;
   font-size: .85em;
-  color: #505050;
+  color: #494949;
 }
 article .wp-caption img,
 article .wp-caption img:hover {
@@ -689,17 +692,10 @@ textarea:focus {
   border-color: #333;
 }
 .pause {
-  width: 30px;
-  height: 30px;
-  background: #000000 url(../images/pause-play.png) no-repeat center center;
   border: 0;
   position: absolute;
   right: 15px;
   top: 15px;
-  overflow: hidden;
-  whitespace: nowrap;
-  text-indent: 100%;
-  border: 1px solid #717171;
 }
 a.button,
 a.button:visited,
@@ -736,11 +732,11 @@ input[type=submit].button.chrome {
   border-width: 1px;
   box-shadow: 0 1px 0 #e9e9e9;
   background: #ffffff;
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #e9e9e9), color-stop(1, #fefefe));
-  background: -ms-linear-gradient(bottom, #e9e9e9, #fefefe);
-  background: -moz-linear-gradient(center bottom, #e9e9e9 0%, #fefefe 100%);
-  background: -o-linear-gradient(#fefefe, #e9e9e9);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fefefe', endColorstr='#e9e9e9', GradientType=0);
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(0, transparent), color-stop(1, rgba(255, 0, 0, 0.22)));
+  background: -ms-linear-gradient(bottom, transparent, rgba(255, 0, 0, 0.22));
+  background: -moz-linear-gradient(center bottom, transparent 0%, rgba(255, 0, 0, 0.22) 100%);
+  background: -o-linear-gradient(rgba(255, 0, 0, 0.22), transparent);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='rgba(255, 0, 0, 0.22)', endColorstr='transparent', GradientType=0);
   color: #111;
 }
 a.button.chrome:hover,
@@ -813,41 +809,71 @@ input.searchfield[type=text]:focus {
   -moz-box-shadow: 0 0 4px rgba(0, 0, 0, 0) !important;
   box-shadow: 0 0 4px rgba(0, 0, 0, 0) !important;
 }
-footer,
-.push {
-  height: 0;
+/*
+footer, .push {
+	height:@footer-sticky;
+	}
+*/
+#player {
+  -moz-opacity: 0.85;
+  -khtml-opacity: 0.85;
+  -webkit-opacity: 0.85;
+  opacity: 0.85;
+  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(opacity=85);
+  filter: alpha(opacity=85);
 }
 footer {
-  margin-top: 30px;
-  color: #a0a0a0;
-  padding: 15px;
   position: absolute;
-  bottom: 0;
   width: 100%;
-  background: rgba(255, 255, 255, 0.8);
-  height: 290px;
+  bottom: 0;
+  padding-bottom: 15px;
+  text-align: center;
 }
-footer a,
-footer a:visited {
-  border: none;
+footer h1 {
+  font-size: 3em;
+  font-weight: 100;
+  margin-bottom: 7px;
 }
-footer a:hover,
-footer a:active {
-  color: #FFF;
+footer h1 .quote {
+  color: red;
 }
-footer .left,
-footer .right {
-  width: 50%;
+footer h2 {
+  margin-bottom: 32px;
+  font-weight: 300;
+  font-size: 1.15em;
+  letter-spacing: .03em;
+  color: #494949;
+  font-family: 'omnes-pro', sans-serif;
 }
-footer .right {
-  text-align: right;
+footer h2 strong {
+  font-weight: 500;
 }
-footer #icon-rss {
-  vertical-align: middle;
-  margin-right: 5px;
+footer h2 a.buy,
+footer h2 a.buy:visited {
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  padding: 6px 12px;
+  text-transform: uppercase;
+  font-size: .6em;
+  margin-left: 10px;
+  border: 2px solid #333;
+  font-family: 'omnes-pro', sans-serif;
+  color: #111;
+  font-weight: 500;
+  letter-spacing: .06em;
 }
-footer .widget {
-  width: 23%;
-  float: left;
-  margin: 15px 11px 30px;
+footer h2 a.buy:hover,
+footer h2 a.buy:hover {
+  background: #333;
+  color: #fff;
+}
+footer .copyright {
+  font-size: .65em;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  margin-top: 20px;
+  font-weight: 500;
+  text-rendering: optimizeLegibility;
+  color: #494949;
 }

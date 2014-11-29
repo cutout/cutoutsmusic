@@ -2,21 +2,21 @@
 </section><!--/container-->
 
 
-<footer role="contentinfo">
-	
-	<?php if (function_exists('dynamic_sidebar')) { ?>
-    	<section class="row clearfix">
-    		<?php dynamic_sidebar('Footer Widgets'); ?>
-    	</section>
-    <?php } ?>
-	
-	
-	<section class="footer-wrap">
-		<section class="row clearfix">
-  			<div id="player" style="width: 100%; height: 260px;"></div>
 
+
+
+<footer role="contentinfo">
+
+<h1><span class="quote">&ldquo;</span>Moon Dials<span class="quote">&rdquo;</span></h1>
+<h2>The first track from the upcoming CutOuts EP, <strong>Cerca</strong>. <a href="#" class="buy">Buy this Track &rarr;</a></h2>
+
+<div id="player" style="width: 100%; height: auto"></div>
+
+		<section class="row clearfix">
+	
+			<div class="track-info"></div>
+			<p class="copyright">&copy;<?php echo date('Y'); ?> Cutouts Music</p>
 		</section>	
-	</section>
 </footer>
 
 <?php wp_footer(); ?>

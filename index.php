@@ -2,12 +2,4 @@
 
 
 
-
-
-<section class="row clearfix">
-	      
-
-
-</section>
-
 <?php get_footer(); ?>
