@@ -46,13 +46,13 @@ video.addEventListener('ended',function()
 
 
 <section class="container">
-
+<!--
 	<header class="masthead clearfix" role="banner">
 		<section class="row">
 			<div class="branding">
 	     		<h1 class="logo">
-	    		    <a href="<?php echo home_url(); ?>/" title="<?php _e('Home','bolt'); ?>">
-	     		    	<?php bloginfo('name'); ?>
+	    		    <a href="<?php // echo home_url(); ?>/" title="<?php _e('Home','bolt'); ?>">
+	     		    	<?php // bloginfo('name'); ?>
 	      		    </a>
 	      		</h1>
 	      	</div>
@@ -62,13 +62,13 @@ video.addEventListener('ended',function()
 
 		<div class="nav-bg">
 		    <nav class="menu clearfix">
-				<?php wp_nav_menu( array('menu' => 'top_menu', 'menu_class' => 'nav clearfix row' )); ?>
+				<?php // wp_nav_menu( array('menu' => 'top_menu', 'menu_class' => 'nav clearfix row' )); ?>
 			</nav>
 		</div>
 		<div class="overlay" aria-hidden="true"></div>
 		
-		-->
-	</header>
+		
+	</header>-->
 
 
 	<section class="main clearfix">
