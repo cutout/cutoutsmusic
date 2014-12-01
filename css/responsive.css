@@ -6,30 +6,11 @@
 @media screen and (max-width: 1280px) {
   body {
     min-width: 0;
-    max-width: 1140px;
+    max-width: 1280px;
   }
-  .main {
-    padding: 30px 15px;
-  }
-  article h1 {
-    font-size: 2em;
-  }
-  article .entry img,
-  article .entry img:hover,
-  article .entry .wp-caption.alignright,
-  article .entry .wp-caption.alignleft,
-  article .entry img[class*="align"],
-  article .entry img[class*="wp-image-"] {
-    max-width: 100%;
-    height: auto;
-  }
-  article .entry img.size-full {
-    max-width: 97.5%;
-    width: auto;
-  }
-  article .entry .postnav a {
-    display: block;
-    width: auto;
+  .row {
+    margin-left: 15px;
+    margin-right: 15px;
   }
 }
 /* 
@@ -39,10 +20,6 @@
 */
 @media only screen and (max-width: 900px) {
   /*General*/
-  .logo a,
-  .logo a:visited {
-    margin: 0 auto;
-  }
   /* Nav */
   .nav-open .nav-bg {
     overflow-y: auto;
@@ -247,10 +224,6 @@
 */
 @media screen and (max-width: 768px) {
   /*Structure*/
-  .container {
-    padding: 0;
-    margin: 0;
-  }
   .container .masthead .branding {
     text-align: center;
   }
@@ -258,8 +231,20 @@
   .container .masthead .branding h1.logo a:visited {
     margin: 0 auto;
   }
-  .container .masthead .branding .row aside.fourcol {
-    margin-top: 30px;
+  /*Content*/
+  footer h1 {
+    margin: 15px 0 0;
+    font-size: 1.5em;
+  }
+  footer h2 {
+    font-size: 1em;
+  }
+  footer h2 a.buy,
+  footer h2 a.buy:visited {
+    display: block;
+    width: 50%;
+    margin: 20px auto;
+    font-size: .7em;
   }
   /*Reset*/
   .row,
@@ -276,50 +261,6 @@
     max-width: none !important;
     min-width: 0 !important;
   }
-  /*Content*/
-  article h1.posttitle,
-  article h1.pagetitle,
-  article h2.posttitle {
-    font-size: 1.4em;
-  }
-  article .entry img,
-  article .entry .wp-caption.alignright,
-  article .entry .wp-caption.alignleft,
-  article .entry .thumb-wrap {
-    float: none !important;
-    margin: 15px auto !important;
-    width: auto !important;
-  }
-  article .entry .postnav .right,
-  article .entry .postnav .left,
-  article .entry .thumb-wrap {
-    text-align: center;
-    margin: 5px 0;
-  }
-  article .entry .postnav .right h5 {
-    margin-top: 7px;
-  }
-  article .entry .gallery .gallery-item,
-  article .entry .gallery .gallery-caption {
-    padding: 0;
-    margin: 0;
-  }
-  /*Footer*/
-  footer,
-  .push {
-    height: auto;
-  }
-  footer {
-    padding: 15px;
-    margin: 0;
-    font-size: .8em;
-  }
-  footer .widget {
-    display: block;
-    width: auto;
-    float: none;
-    margin: 15px 3%;
-  }
 }
 /* 
 // =======================================================================
@@ -327,7 +268,14 @@
 // =======================================================================
 */
 @media screen and (max-width: 600px) {
-  article .entry .postnav h5 {
-    font-size: .8em;
+  footer {
+    position: static;
+  }
+  footer .copyright,
+  footer .socials {
+    display: block;
+  }
+  footer .socials {
+    margin-top: -7px;
   }
 }
