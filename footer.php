@@ -4,8 +4,8 @@
 <footer role="contentinfo">
 	<section class="row clearfix">
 
-		<h1><span class="quote">&ldquo;</span>Moon Dials<span class="quote">&rdquo;</span></h1>
-		<h2>From the upcoming CutOuts EP, <strong>Cerca</strong>. <a href="#" class="buy" target="_blank">Buy this Track &rarr;</a></h2>
+		<h1><span class="quote">&ldquo;</span>Cerca<span class="quote">&rdquo;</span></h1>
+		<h2>Track #1 from the upcoming CutOuts EP, <strong>Cerca</strong>. <a href="https://cutoutsmusic.bandcamp.com/track/cerca" class="buy" target="_blank">Buy this Track &rarr;</a></h2>
 
 		<div id="player" style="width: 100%; height: auto"></div>
 
@@ -38,7 +38,7 @@
             dom: "#player",
             skin: "dark",
             urls: [
-                "https://soundcloud.com/cutouts/wje"
+                "https://soundcloud.com/cutouts/cerca"
             ]
         });
     });

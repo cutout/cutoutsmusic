@@ -103,7 +103,7 @@ object {
   display: block;
 }
 html {
-  background: #ffffff url(../images/squairy_light-2.png);
+  background: #ffffff url(../images/squairy_light.png);
 }
 body {
   color: #111111;
@@ -846,10 +846,10 @@ footer h1 {
   color: #272727;
 }
 footer h1 .quote {
-  color: #FF6700;
+  color: #ff6700;
 }
 footer h2 {
-  margin-bottom: 27px;
+  margin-bottom: 32px;
   font-weight: 300;
   font-size: 1.15em;
   letter-spacing: .03em;
@@ -897,8 +897,4 @@ footer .meta a:visited {
 footer .meta a:hover,
 footer .meta a:active {
   border-color: #333;
-}
-footer .copyright a:hover,
-footer .copyright a:active {
-  color: red;
 }
