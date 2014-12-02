@@ -1,5 +1,7 @@
 	</section><!--/main-->
-</section><!--/container-->
+</div><!--/container-->
+
+		
 
 <footer role="contentinfo">
 	<section class="row clearfix">
@@ -14,7 +16,8 @@
 	</section>	
 </footer>
 
-<?php wp_footer(); ?>
+
+
 
 <script src="<?php bloginfo('template_url'); ?>/js/responsive.js"></script> 
 
@@ -44,5 +47,27 @@
     });
 </script>
 
+
+<div class="overlay overlay-hugeinc">
+			<button type="button" class="overlay-close button-close"> X </button>
+			
+			
+			<article class="clearfix">
+				<div class="hdr-about left"><h3>About</h3></div>
+				<div class="desc-about right">
+				<p><img class="alignright wp-image" src="<?php bloginfo('template_directory'); ?>/images/avatar.png" />Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque facilisis condimentum nisl, id fringilla augue fermentum sit amet. Mauris luctus nunc id varius lacinia. Vivamus commodo lorem risus, id convallis sapien rutrum ut. Quisque consectetur tincidunt lectus, a volutpat tortor luctus sit amet. Integer sapien tortor, pharetra non urna nec, pellentesque sollicitudin purus. Ut dictum condimentum mi sit amet cursus. </p>
+				</div>
+			
+			</article>
+			
+					
+		</div>
+		
+		
+	
+		<script src="<?php bloginfo('template_url'); ?>/js/classie.js"></script>
+		<script src="<?php bloginfo('template_url'); ?>/js/demo7.js"></script>
+		
+		
 </body>
 </html>
