@@ -689,7 +689,7 @@ article {
 		}
 
 	.alignright {
-		margin:6px 5px 10px 15px;
+		margin:8px 0px 15px 32px;
 		float:right
 		}
 	}
@@ -746,12 +746,15 @@ input:focus, textarea:focus {
 	border-color:#333;
 	}
 
-a.buy, a.buy:visited, button, input[type=submit] {
+a.buy, a.buy:visited {
+	margin-left: 10px;
+	}
+
+a.buy, a.buy:visited, button, .button, input[type=submit] {
 			.rounded(4px);
 			padding: 6px 12px;
 			text-transform: uppercase;
 			font-size: .6em;
-			margin-left: 10px;
 			border:2px solid #333;
 			font-family:@font-body;
 			color:#111;
@@ -762,10 +765,18 @@ a.buy, a.buy:visited, button, input[type=submit] {
 			outline:none;
 			}
 		
-a.buy:hover, a.buy:active, button:hover {
+a.buy:hover, a.buy:active, button:hover, .button:hover {
 			color:#fff;
 			background:#000;
 			}
+
+.overlay button.overlay-close:hover, .overlay article .desc-about a.button:hover {
+	background:transparent;
+	color:#fff;
+	border-color:#9B9B9B
+	}
+
+
 
 #trigger-overlay, .overlay .overlay-close {
 	position:fixed;
@@ -781,9 +792,6 @@ a.buy:hover, a.buy:active, button:hover {
 			color:#fff;
 			}
 		
-		.overlay button.overlay-close:hover {
-			background:transparent;
-			}
 			
 		article {
 			max-width:600px;
@@ -805,7 +813,24 @@ a.buy:hover, a.buy:active, button:hover {
 			
 			.desc-about {
 				width:74%;
-				}	
+				
+					em {
+						color:#a0a0a0;
+						}
+					
+					a.button {
+						color:#fff
+						}
+					
+					a, a:visited {
+						color:#B17FD2
+						}
+					
+					a:hover, a:active {
+						color:#D9B6F0
+						}				
+				}
+				
 			}	
 		}
 

@@ -7,7 +7,7 @@
 	<section class="row clearfix">
 
 		<h1><span class="quote">&ldquo;</span>Cerca<span class="quote">&rdquo;</span></h1>
-		<h2>Track #1 from the upcoming CutOuts EP, <strong>Cerca</strong>. <a href="https://cutoutsmusic.bandcamp.com/track/cerca" class="buy" target="_blank">Buy this Track &rarr;</a></h2>
+		<h2>Track #1 from the CutOuts EP, <strong>Cerca</strong>. <a href="https://cutoutsmusic.bandcamp.com/track/cerca" class="buy" target="_blank">Buy this Track &rarr;</a></h2>
 
 		<div id="player" style="width: 100%; height: auto"></div>
 
@@ -55,7 +55,9 @@
 			<article class="clearfix">
 				<div class="hdr-about left"><h3>About</h3></div>
 				<div class="desc-about right">
-				<p><img class="alignright wp-image" src="<?php bloginfo('template_directory'); ?>/images/avatar.png" />Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque facilisis condimentum nisl, id fringilla augue fermentum sit amet. Mauris luctus nunc id varius lacinia. Vivamus commodo lorem risus, id convallis sapien rutrum ut. Quisque consectetur tincidunt lectus, a volutpat tortor luctus sit amet. Integer sapien tortor, pharetra non urna nec, pellentesque sollicitudin purus. Ut dictum condimentum mi sit amet cursus. </p>
+				<p><img class="alignright wp-image" src="<?php bloginfo('template_directory'); ?>/images/avatar.png" />THE CUTOUTS STARTED in 1999 as a pseudonymous home-recording project in a basement in Charlottesville. In 2002 The CutOuts collaborated with <a href="http://www.foolery.org/" target="_blank">Foolery</a> theater company to provide an ambient score to <a href="http://www.foolery.org/vassilisabrave.html" target="_blank">Vassilisa the Brave</a>. In 2004, a full-length CD of experimental music was released titled <em>After a Long Illness</em>.</p>  <p>The most recent EP titled <em>Cerca</em> replaces the pots and pans and cheap Casios with a single Telecaster, cello bow, and abundant natural reverb.</p>
+				
+				<a class="button" href="mailto:cutout@gmail.com">Contact Us</a>
 				</div>
 			
 			</article>

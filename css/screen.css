@@ -643,7 +643,7 @@ article .alignleft {
   float: left;
 }
 article .alignright {
-  margin: 6px 5px 10px 15px;
+  margin: 8px 0px 15px 32px;
   float: right;
 }
 .postnav {
@@ -692,8 +692,13 @@ textarea:focus {
   border-color: #333;
 }
 a.buy,
+a.buy:visited {
+  margin-left: 10px;
+}
+a.buy,
 a.buy:visited,
 button,
+.button,
 input[type=submit] {
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
@@ -701,7 +706,6 @@ input[type=submit] {
   padding: 6px 12px;
   text-transform: uppercase;
   font-size: .6em;
-  margin-left: 10px;
   border: 2px solid #333;
   font-family: 'omnes-pro', sans-serif;
   color: #111;
@@ -713,9 +717,16 @@ input[type=submit] {
 }
 a.buy:hover,
 a.buy:active,
-button:hover {
+button:hover,
+.button:hover {
   color: #fff;
   background: #000;
+}
+.overlay button.overlay-close:hover,
+.overlay article .desc-about a.button:hover {
+  background: transparent;
+  color: #fff;
+  border-color: #9b9b9b;
 }
 #trigger-overlay,
 .overlay .overlay-close {
@@ -729,9 +740,6 @@ button:hover {
 .overlay button.overlay-close {
   border-color: #696969;
   color: #fff;
-}
-.overlay .overlay button.overlay-close:hover {
-  background: transparent;
 }
 .overlay article {
   max-width: 600px;
@@ -751,6 +759,20 @@ button:hover {
 }
 .overlay article .desc-about {
   width: 74%;
+}
+.overlay article .desc-about em {
+  color: #a0a0a0;
+}
+.overlay article .desc-about a.button {
+  color: #ffffff;
+}
+.overlay article .desc-about a,
+.overlay article .desc-about a:visited {
+  color: #b17fd2;
+}
+.overlay article .desc-about a:hover,
+.overlay article .desc-about a:active {
+  color: #d9b6f0;
 }
 .searchform,
 #searchform {
